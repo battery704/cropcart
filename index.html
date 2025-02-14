@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="cc.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body >
+    <header >
+        <div id="navbar">
+            <div class="nav-logo" ><div class="logo"></div></div>
+            <div class="nav"><a class="nav1" href="">HOME</a></div>
+            <div class="nav"><a class="nav1" href="#footer">ABOUT US</a></div>
+            <div class="nav"><a class="nav1" href="">CONTACT US</a></div> 
+
+            
+            
+
+        </div>
+    </header>
+
+    <section id="a">
+        <div class="image">
+           
+            
+            <div class="img" id="box3"> <a href="#grains"><img class="img1" src="Untitled-1-01.png" alt="img"><p class="label">Grains</p></a></div>
+            <div class="img" id="box2"> <a href="#dairy"><img class="img1" src="dairy-01.png" alt="img"><p class="label">Dairy</p></a></div>
+            <div class="img" id="box3"> <a href="#vegetables"><img class="img1" src="Untitled-1 [Recovered]-01.png" alt="img"><p class="label" id="vlabel">Vegetables</p></a></div>
+            
+            <div class="img" id="box1"> <a href="#other"><img  class="img1" src="cotton-01.png" alt="img"><p class="label">Other</p></a></div>
+        </div>
+
+>
+    </section>
+    <section id="form">
+        <button id="openFormBtn">SELL</button>
+
+    <div id="formContainer">
+    <h2>Product Details</h2>
+    <form id="contactForm">
+        
+            <input type="text" id="productName" placeholder="Product Name" required />
+            <input type="text" id="productLocation" placeholder="Location" required />
+            <input type="text" id="sellerName" placeholder="Seller Name" required />
+            <input type="text" id="productPrice" placeholder="Price (e.g., 30/kg)" required />
+            <input type="text" id="phoneNumber" placeholder="Phone Number" required />
+        
+            <!-- Button to Open Image Selection Grid -->
+            <button type="button" id="chooseImageBtn">Choose Image</button>
+            <input type="text" id="productImage" placeholder="Selected Image" readonly required />
+        
+            <select id="productCategory">
+                <option value="Crops">Crops</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Other">Other</option>
+            </select>
+        
+           
+
+      <button type="submit">Submit</button>
+      <button type="button" id="closeFormBtn">Close</button>
+    </form>
+    </div>
+    <div id="imagePopup" class="popup">
+        <div class="popup-content">
+            <h3>Select an Image</h3>
+            <div class="image-grid">
+                <img src="cotton.jpg" alt="Milk" onclick="selectImage('cotton.jpg')">
+                <img src="garlic.jpg" alt="Milk" onclick="selectImage('garlic.jpg')">
+                <img src="ghee.jpg" alt="Milk" onclick="selectImage('ghee.jpg')">
+                <img src="jute.jpg" alt="Milk" onclick="selectImage('jute.jpg')">
+                <img src="milk.jpg" alt="Milk" onclick="selectImage('milk.jpg')">
+                <img src="mustered.jpg" alt="Milk" onclick="selectImage('mustered.jpg')">
+                <img src="natural-wheat.jpg" alt="Milk" onclick="selectImage('natural-wheat.jpg')">
+                <img src="onion.jpg" alt="Milk" onclick="selectImage('onion.jpg')">
+                <img src="paneer.jpg" alt="Milk" onclick="selectImage('paneer.jpg')">
+                <img src="patato.jpg" alt="Milk" onclick="selectImage('patato.jpg')">
+                <img src="peanutss.jpg" alt="Milk" onclick="selectImage('peanutss.jpg')">
+                <img src="pulses.jpg" alt="Milk" onclick="selectImage('pulses.jpg')">
+                <img src="rice.jpg" alt="Milk" onclick="selectImage('rice.jpg')">
+                <img src="soyabean.jpg" alt="Milk" onclick="selectImage('soyabean.jpg')">
+                <img src="sugarcane.jpg" alt="Milk" onclick="selectImage('sugarcane.jpg')">
+                <img src="uble.jpg" alt="Milk" onclick="selectImage('uble.jpg')">
+                <img src="wool.jpg" alt="Milk" onclick="selectImage('wool.jpg')">
+               
+
+               
+            </div>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+    </section>
+    
+
+    <section id="about us ">
+        <div id="about us ">
+            
+        </div>
+
+
+
+    </section>
+    
+    <br>
+    <br><br>
+    <div   class="sec" id="dairy"><h2>Dairy</h2></div>
+    <br><br>
+
+
+    <section id="dairy">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class=" card-wrapper swiper-wrapper">
+                  <div class="swiper-slide" id="1">
+                    <div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="milk.jpg" alt="" class="card-img">
+                         <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                    </div>
+
+
+                </div>
+                <div class="card-content">
+                    <h2 class="product">Milk</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">Suresh Singh</h4>
+                    <h4 class="price">30/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div>
+                <div class="swiper-slide" id="2"><div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="ghee.jpg" alt="" class="card-img">
+                         <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                    </div>
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">Ghee</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">Ram Singh</h4>
+                    <h4 class="price">1100/kg</h4>
+                    <h4 class="phone">9311239658</h4>
+        
+                    
+                </div></div>
+                
+                <div class="swiper-slide" id="3"><div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="paneer.jpg" alt="" class="card-img">
+                         <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                    </div>
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">paneer</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">Krishna Dairy</h4>
+                    <h4 class="price">250/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div>
+                <div class="swiper-slide" id="4"><div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="milk.jpg" alt="" class="card-img">
+                         <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                    </div>
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">Milk</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">Susheer</h4>
+                    <h4 class="price">60/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div>
+                <div class="swiper-slide" id="5"><div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="ghee.jpg" alt="" class="card-img">
+                         <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                    </div>
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">Ghee</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">Manraj</h4>
+                    <h4 class="price">1000/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div>
+                  
+                </div>
+            
+            </div>
+              
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <br><br><br><br><br>
+    <br>
+    
+    <div class="sec" id="grains"><h2>Grains</h2></div>
+    <br><br>
+ <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+
+    <section id="Grains">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class=" card-wrapper swiper-wrapper">
+                  <div class="swiper-slide" id="6">
+                    <div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="peanutss.jpg" alt="" class="card-img">
+                         <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                    </div>
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">peanutss</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">Gunjan Singh</h4>
+                    <h4 class="price">60/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div>
+                <div class="swiper-slide" id="7"><div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="mustered.jpg" alt="" class="card-img">
+                         <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                    </div>
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">mustered</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">rahsmi</h4>
+                    <h4 class="price">310/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div>
+                <div class="swiper-slide" id="8"><div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="pulses.jpg" alt="" class="card-img">
+                        <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                        
+                    </div>
+                    
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">pulses</h2>
+                    <h4 class="location">niwai</h4>
+                    <h4 class="name">Surita</h4>
+                    <h4 class="price">70/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div><div class="swiper-slide" id="9"><div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="soyabean.jpg" alt="" class="card-img">
+                         <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                    </div>
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">soyabean</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">hassan</h4>
+                    <h4 class="price">60/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div><div class="swiper-slide" id="10"><div class="image-content">
+                    <div class="card-image">
+        
+                        <img src="rice.jpg" alt="" class="card-img">
+                        <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                        
+                    </div>
+                    
+        
+        
+        
+                </div>
+                <div class="card-content">
+                    <h2 class="product">rice</h2>
+                    <h4 class="location"> Jaipur</h4>
+                    <h4 class="name">purab</h4>
+                    <h4 class="price">60/kg</h4>
+                    <h4 class="phone">9355239658</h4>
+        
+                    
+                </div></div>
+                  
+                </div>
+            
+            </div>
+              
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+<br><br><br><br><br>
+<br>
+
+<div class="sec" id="vegetables"><h2>Vegetables</h2></div>
+<br><br>
+
+
+<section id="Vegetables">
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class=" card-wrapper swiper-wrapper">
+              <div class="swiper-slide" id="11">
+                <div class="image-content">
+                <div class="card-image">
+    
+                    <img src="onion.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">onion</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">rohit </h4>
+                <h4 class="price">30/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div>
+            
+            <div class="swiper-slide" id="12"><div class="image-content">
+                <div class="card-image">
+    
+                    <img src="patato.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">patato</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">manisha</h4>
+                <h4 class="price">30/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div>
+            <div class="swiper-slide" id="13"><div class="image-content">
+                <div class="card-image">
+    
+                    <img src="milk.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">garlic</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">sneha</h4>
+                <h4 class="price">420/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div><div class="swiper-slide" id="14"><div class="image-content">
+                <div class="card-image">
+    
+                    <img src="onion.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">onion</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">Suresh Singh</h4>
+                <h4 class="price">30/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div><div class="swiper-slide" id="15"><div class="image-content">
+                <div class="card-image">
+    
+                    <img src="patato.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">patato</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">manraj Singh</h4>
+                <h4 class="price">30/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div>
+              
+            </div>
+        
+        </div>
+          
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<br><br><br><br><br>
+<br>
+
+<div class="sec" id="other"><h2>other</h2></div>
+<br><br>
+
+
+<section id="Other">
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class=" card-wrapper swiper-wrapper">
+              <div class="swiper-slide" id="16">
+                <div class="image-content">
+                <div class="card-image">
+    
+                    <img src="cotton.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">cotton</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">deepank</h4>
+                <h4 class="price">3110/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div>
+            <div class="swiper-slide" id="17"><div class="image-content">
+                <div class="card-image">
+    
+                    <img src="jute.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">jute</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">kamil</h4>
+                <h4 class="price">60/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div>
+            <div class="swiper-slide" id="18"><div class="image-content">
+                <div class="card-image">
+    
+                    <img src="sugarcane.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">sugarcane</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">lavely singh</h4>
+                <h4 class="price">30/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div><div class="swiper-slide" id="19"><div class="image-content">
+                <div class="card-image">
+    
+                    <img src="wool.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+                <h2 class="product">wool</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">Sameer Singh</h4>
+                <h4 class="price">30/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div><div class="swiper-slide" id="20"><div class="image-content">
+                <div class="card-image">
+    
+                    <img src="uble.jpg" alt="" class="card-img">
+                     <button class="delete-btn" onclick="deleteCard(this)">&#128465;</button>
+                </div>
+    
+    
+    
+            </div>
+            <div class="card-content">
+
+                <h2 class="product">uble</h2>
+                <h4 class="location"> Jaipur</h4>
+                <h4 class="name">kishan</h4>
+                <h4 class="price">30/kg</h4>
+                <h4 class="phone">9355239658</h4>
+    
+                
+            </div></div>
+              
+            </div>
+        
+        </div>
+          
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
+
+
+
+<br><br>
+<div id="contact"><a href="mailto:example@example.com?subject=Inquiry&body=Hello, I want to know more!" class="contact-btn">    <h1 id="hcontact">contact</h1>
+</a>
+
+
+    <h3 id="emailc"> Email:vikkyy703@gmail.com</h3>
+    <h3 id="linkc">linkedIn:www.linkedin.com/in/deepank-yadav-b51234223</h3>
+    <p id="pc">"We value your input! Share your experience with CropCart, send us feedback, or suggest any flaws you’ve noticed. Have an idea to improve our platform? Let us know—we’re always looking to grow with you!"</p>
+</div>
+
+
+
+<br><br>
+<footer id="footer" style="background-color: #79935a; color: #192314; text-align: center; padding: 20px;">
+    <p>
+      <strong>About CropCart:</strong><br>
+      CropCart is a platform dedicated to revolutionizing the agricultural market by connecting farmers and buyers seamlessly. 
+      Our mission is to empower local farmers, reduce middlemen, and ensure fair pricing for high-quality produce.
+    </p>
+    <p>
+      Developed as a final year project by Deepank Yadav , Manraj Singh, Purab Pareek at Jecrc University, CropCart combines technology and innovation to address real-world challenges in the agricultural industry.
+    </p>
+    <p>
+      <a href="#" style="color: #192314; text-decoration: underline;">Learn More</a> | <a href="mailto:contact@cropcart.com" style="color: #192314; text-decoration: underline;">Contact Us</a>
+    </p>
+    <p style="margin-top: 10px; font-size: 0.9em;">&copy; 2025 CropCart. All rights reserved.</p>
+  </footer>
+
+    
+
+    
+
+<script src="swiper.min.js"></script>    
+<script src="cc.js"></script>
+</body>
+</html>
